@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+   
+
+    <img src="./ldg.jpeg" id="imagine1"/>
+
+    <p id="paragraf">paragraf</p>
+    <button onclick="functie2()">da click</button>
+
+    <button onclick="clasa1()">clasa</button>
+
+    <script>
+
+        function clasa1() {
+            const paragraf = document.getElementById("paragraf");
+            paragraf.classList.toggle("fontceva");
+        }
+
+        function ceva14(){
+            const img = document.getElementById("imagine1");
+            img.src = "./Picture1.jpg"
+        }
+
+        function functie2(){
+            const paragraf = document.getElementById(paragraf);
+            paragraf.style.color = "red";
+            paragraf.style.backgroundColor = "yellow";
+            paragraf.style.fontSize = "30px";
+        }
+
+        // const suma = (a, b) => a + b;
+        // const produs = (a, b) => a * b;
+        // const diferenta = (a, b) => a - b;
+        // const impartire = (a, b) => a / b;
+
+        // const general = (a, b) => {
+        //     console.log("suma: ", suma(a, b));
+        //     console.log("produs: ", produs(a, b));
+        //     console.log("diferenta: ", diferenta(a, b));
+        //     console.log("impartire: ", impartire(a, b));
+        // }
+
+        // general(10, 5);
+
+    </script>
+    
+</body>
+</html>

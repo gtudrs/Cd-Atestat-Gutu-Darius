@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Khao Pad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Khao Pad</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="VIDEO_URL_HERE" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>2 cups (400 g) cooked jasmine rice (preferably day-old)</li>
+            <li>200 g chicken, shrimp, or tofu</li>
+            <li>2 eggs</li>
+            <li>3 tbsp (45 ml) vegetable oil</li>
+            <li>3 cloves garlic, minced</li>
+            <li>1/2 cup (120 ml) diced carrots and peas</li>
+            <li>2 tbsp (30 ml) soy sauce</li>
+            <li>1 tbsp (15 ml) fish sauce</li>
+            <li>1 tsp (5 g) sugar</li>
+            <li>1/2 tsp (2 g) white pepper</li>
+            <li>2 green onions, chopped</li>
+            <li>1 lime, cut into wedges</li>
+        </ul>
+
+        <h2>Steps:</h2>
+        <ul>
+            <li>Step 1: Heat 2 tbsp of oil in a wok or large pan over medium-high heat. Add the minced garlic and stir-fry until fragrant.</li>
+            <li>Step 2: Add the protein (chicken, shrimp, or tofu) and cook until fully done, about 3-4 minutes.</li>
+            <li>Step 3: Push everything to one side of the pan, add the eggs, and scramble until just set. Then mix with the protein.</li>
+            <li>Step 4: Stir in the cooked rice, breaking up any clumps, and mix well with the other ingredients.</li>
+            <li>Step 5: Add the diced carrots, peas, soy sauce, fish sauce, sugar, and white pepper. Stir-fry for another 3-4 minutes.</li>
+            <li>Step 6: Toss in the chopped green onions, stir briefly, and remove from heat.</li>
+            <li>Step 7: Serve hot with lime wedges on the side. Enjoy this classic Thai fried rice dish!</li>
+        </ul>
+
+        <a href="./thai.html" class="back-link">← Back</a>
+    </div>
+
+</body>
+</html>

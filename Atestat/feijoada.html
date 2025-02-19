@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Recipe Name</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Feijoada</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="VIDEO_URL_HERE" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>500 g dried black beans (or 2 cans, drained and rinsed)</li>
+            <li>1.2 kg assorted meats, such as:
+                <ul>
+                    <li>300 g smoked sausage (chorizo or linguiça), sliced</li>
+                    <li>300 g pork ribs, cut into pieces</li>
+                    <li>300 g beef brisket or salted beef (carne seca), cubed</li>
+                    <li>300 g smoked bacon, diced</li>
+                </ul>
+            </li>
+            <li>2 tbsp (30 ml) olive oil</li>
+            <li>1 large onion, finely chopped</li>
+            <li>4 cloves garlic, minced</li>
+            <li>2 bay leaves</li>
+            <li>1 tsp (5 g) smoked paprika</li>
+            <li>1/2 tsp (2 g) black pepper</li>
+            <li>1/2 tsp (2 g) cumin (optional)</li>
+            <li>Salt to taste</li>
+            <li>1.5 L water or beef broth</li>
+            <li>1 orange (halved, optional, helps reduce fat taste)</li>
+        </ul>
+
+        <h2>For Serving:</h2>
+        <ul>
+            <li>White rice</li>
+            <li>Farofa (toasted cassava flour, optional)</li>
+            <li>Orange slices (for balance)</li>
+            <li>Chopped coriander or parsley</li>
+        </ul>
+
+        <h2>Steps:</h2>
+        <ul>
+            <li>Step 1: Prepare the Beans:
+                If using dried beans, soak them overnight in cold water.
+                Drain and rinse before cooking.
+                If using canned beans, skip this step.</li>
+
+            <li>Step 2: Brown the Meats:
+                In a large pot or Dutch oven, heat olive oil over medium heat.
+                Add bacon and cook until crispy (about 5 minutes).
+                Add sausage, ribs, and beef. Brown for 5-7 minutes, stirring occasionally.
+                Remove the meats and set aside.</li>
+
+            <li>Step 3: Cook the Aromatics:
+                In the same pot, sauté onions for 3 minutes until soft.
+                Add garlic, smoked paprika, and cumin. Cook for 30 seconds.</li>
+
+            <li>Step 4: Simmer the Feijoada:
+                Return the meats to the pot.
+                Add the black beans, bay leaves, and water (or broth).
+                Place the halved orange in the pot (optional, helps cut the fat taste).
+                Bring to a boil, then reduce to a gentle simmer.
+                Cover and cook for 2.5 to 3 hours, stirring occasionally.</li>
+
+            <li>Step 5: Adjust Seasoning:
+                Once the beans are tender, remove the orange halves and bay leaves.
+                Taste and adjust salt and pepper as needed.
+                If the feijoada is too thick, add a bit of water. If too thin, let it simmer uncovered for 15 more minutes.</li>
+
+            <li>Step 6: Serve & Garnish:
+                Serve hot with white rice, farofa, and orange slices.
+                Garnish with chopped parsley or coriander.</li>
+        </ul>
+
+        <a href="./brazilian.html" class="back-link">← Back</a>
+    </div>
+
+</body>
+</html>
