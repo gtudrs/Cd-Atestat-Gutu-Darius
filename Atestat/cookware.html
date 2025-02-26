@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookware Shop - Chef's Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Kurale", serif;
+            background-color: #7ABA78;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://thumbs.dreamstime.com/b/vintage-kitchen-tools-pattern-cooking-seamless-kitchenware-equipment-light-blue-background-51644206.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+
+            background-color: #578FCA;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-right a{
+            
+            color: #A1E3F9;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover{
+            background-color:#D1F8EF ;
+            color: #3674B5;
+        }
+
+        .nav-left{
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        
+        .nav-left a{
+            color: #A1E3F9;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            background-color:#D1F8EF ;
+            color: #3674B5;
+        }
+       
+        .products {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color:#D1F8EF ;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            border: 2px solid #3674B5;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product button {
+            background-color: #578FCA;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="#cart">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </div>
+    </nav>
+    
+    
+    
+    <section class="products">
+
+        <div class="product-grid">
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/045/712/982/small_2x/chef-s-knife-on-textured-dark-surface-photo.jpg" height="150px" width="200px">
+                <h3>Chef’s Knife</h3>
+                <p>$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://t4.ftcdn.net/jpg/11/42/61/85/360_F_1142618584_VDNXOnOSmRdddIk7fxXz1n0QKJ2g4uF0.jpg" height="150px" width="200px">
+                <h3>Paring Knife</h3>
+                <p>$7.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://senkenknives.com/cdn/shop/files/ShogunBreadKnifeImage11500x1500Dark_grande.jpg?v=1723397923" height="150px" width="200px">
+                <h3>Bread Knife</h3>
+                <p>$9.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://takaiknives.com/cdn/shop/files/7_SantokuI_1001x.png?v=1693324460" height="150px" width="200px">
+                <h3>Santoku Knife</h3>
+                <p>$17.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://media.istockphoto.com/id/898460224/photo/walnut-handmade-wooden-cutting-board-on-black-cotton.jpg?s=612x612&w=0&k=20&c=g3_LAUtlmQh1EvuA7MqvTlNlRhMRzQG1LJMFMOGbU2A=" height="150px" width="200px">
+                <h3>Cutting Board (Wooden)</h3>
+                <p>$11.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://i.ebayimg.com/images/g/eb8AAOSwQ7tjSbf~/s-l1200.jpg" height="150px" width="200px">
+                <h3>Pasta Fork</h3>
+                <p>$4.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/peeler/7/7/b/1-plyss-09-kitchenfest-yes-original-imagr6r4dzjc4kpk.jpeg?q=90&crop=false" height="150px" width="200px">
+                <h3>Peeler</h3>
+                <p>$4.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202450/0021/microplane-box-grater-o.jpg" height="150px" width="200px">
+                <h3>Grater (Box Grater)</h3>
+                <p>$6.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.iqliving.com/cdn/shop/products/4_55184_2000x.jpg?v=1602084848" height="150px" width="200px">
+                <h3>Mandoline Slicer</h3>
+                <p>$14.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/465742558/photo/dark-gray-granite-mortar-and-pestle-set-on-textured-counter.jpg?s=612x612&w=0&k=20&c=8rxBuPP3wGKHKwIOiDKtjxa1OVDe-TToBksbPQNx1LM=" height="150px" width="200px">
+                <h3>Mortar and Pestle</h3>
+                <p>$11.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://zayanguide.com/wp-content/uploads/2024/10/What-Is-A-Rolling-Pin.jpg" height="150px" width="200px">
+                <h3>Rolling Pin</h3>
+                <p>$8.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://t4.ftcdn.net/jpg/01/18/30/87/360_F_118308702_60Yo4c1wnpYkkt7SAB9Kdy7hSqykFytC.jpg" height="150px" width="200px">
+                <h3>Measuring Cups Set</h3>
+                <p>$5.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://thecooksedge.com/cdn/shop/products/BC9BD53E-E22E-4899-8655-B7D61257B607_1_105_c.jpg?v=1641932781&width=320" height="150px" width="200px">
+                <h3>Measuring Spoons Set</h3>
+                <p>$3.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.culinaris.de/media/5c/f5/6c/1717485690/40503_-_Set_Margrethe-2.jpg" height="150px" width="200px">
+                <h3>Mixing Bowls (Set of 3)</h3>
+                <p>$9.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://cdn.create.vista.com/api/media/small/447275883/stock-photo-empty-sieve-strainer-stainless-metal-handles-front-view" height="150px" width="200px">
+                <h3>Colander (Stainless Steel)</h3>
+                <p>$7.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://images.firma-gamma.ru/images/3/8/g73241479974x.jpg" height="150px" width="200px">
+                <h3>Whisk</h3>
+                <p>$3.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://products.radacutlery.com/cdn/shop/products/9-12-inch-tongs-both2_1618fee2-913f-49a3-a342-0091d71d10f2_1200x.jpg?v=1655991865" height="150px" width="200px">
+                <h3>Tongs (Stainless Steel)</h3>
+                <p>$5.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://c1.wallpaperflare.com/preview/488/352/49/spoon-plastic-products.jpg" height="150px" width="200px">
+                <h3>Ladle</h3>
+                <p>$3.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://assets.wsimgs.com/wsimgs/ab/images/dp/wcm/202440/0038/img148m.jpg" height="150px" width="200px">
+                <h3>Slotted Spoon</h3>
+                <p>$3.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://lancastercastiron.com/cdn/shop/products/Handmadewoodenspoons_grande.jpg?v=1611341846" height="150px" width="200px">
+                <h3>Wooden Spoon Set (3 pcs)</h3>
+                <p>$5.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/810+sEadfAL._AC_UF350,350_QL80_.jpg" height="150px" width="200px">
+                <h3>Spatula (Silicone)</h3>
+                <p>$4.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://cb.scene7.com/is/image/Crate/OXOFishSpatulaSHF16?$web_pdp_main_carousel_med$" height="150px" width="200px">
+                <h3>Fish Turner</h3>
+                <p>$5.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/71wbdrm5dCS._AC_UF894,1000_QL80_.jpg" height="150px" width="200px">
+                <h3>Kitchen Shears</h3>
+                <p>$7.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://ae01.alicdn.com/kf/He538aa44cca84d8cb599841c9beb2d76Q.jpg_640x640q90.jpg" height="150px" width="200px">
+                <h3>Garlic Press</h3>
+                <p>$6.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://azure-merchants.zammit.shop/active-storage/lbkn7e4filcbxw0bhd4dmem31uso" height="150px" width="200px">
+                <h3>Can Opener (Manual)</h3>
+                <p>$6.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdoYVuhLA9jnQg7PPDSGJXMnFBz4mlVUJzcnVPXQTOhIeeyc93sNNPVVe_NjBOvLq3EE&usqp=CAU" height="150px" width="200px">
+                <h3>Zester/Microplane</h3>
+                <p>$7.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/518-m8G+G6L._AC_UF350,350_QL80_.jpg" height="150px" width="200px">
+                <h3>Basting Brush (Silicone)</h3>
+                <p>$3.49</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/984991072/photo/a-silver-skimmer.jpg?s=612x612&w=0&k=20&c=-nQCia6UZwSYjQSpC3_37Zc1dV7fk3rYdRzTFZk1TIs=" height="150px" width="200px">
+                <h3>Skimmer (Strainer Spoon)</h3>
+                <p>$4.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://m.media-amazon.com/images/I/51MhT2XzJGL.jpg" height="150px" width="200px">
+                <h3>Meat Thermometer (Digital)</h3>
+                <p>$9.99</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

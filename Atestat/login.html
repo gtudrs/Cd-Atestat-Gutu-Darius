@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Kurale", serif;
+            overflow: hidden;
+            background-image:url(https://static.vecteezy.com/system/resources/thumbnails/042/351/185/small_2x/high-contrast-background-with-doodle-mexican-food-black-and-white-frame-template-or-design-print-with-traditional-street-food-good-for-banner-background-social-media-graphics-vector.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover ;
+            width: 100%;
+            height: 100vh;
+        }
+
+        nav{
+
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-right a{
+            
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+
+        }
+
+        .nav-left{
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        
+        .nav-left a{
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+        }
+    
+    </style>
+</head>
+<body>
+    
+    <nav>
+
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="#cart">Cart</a>
+            
+        </div>
+
+        <div class="nav-right">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="#login">Login</a>
+        </div>
+
+    </nav>
+
+    <form>
+        <input type="email" placeholder="Email"> <br>
+        <input type="password" placeholder="Password"> <br>
+        <input type="submit" placeholder="Submit">
+    </form>
+
+</body>
+</html>
