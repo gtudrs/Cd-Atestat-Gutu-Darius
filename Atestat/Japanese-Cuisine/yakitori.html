@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Yakitori</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="../Home/Atestat.html">Home</a>
+            <a href="../Home/recipes.html">Recipes</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="../Home/login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Yakitori</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="VIDEO_URL_HERE" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>500 g boneless chicken thighs, cut into bite-sized pieces</li>
+            <li>1/2 cup (120 ml) soy sauce</li>
+            <li>1/4 cup (60 ml) mirin</li>
+            <li>1/4 cup (60 ml) sake</li>
+            <li>2 tbsp (30 g) sugar</li>
+            <li>1 tsp (5 g) grated ginger</li>
+            <li>1 clove garlic, minced</li>
+            <li>1/2 tsp (2 g) black pepper</li>
+            <li>Wooden skewers, soaked in water</li>
+            <li>Spring onions, cut into pieces</li>
+        </ul>
+
+        <h2>Steps:</h2>
+        <ul>
+            <li>Step 1: In a small saucepan, combine soy sauce, mirin, sake, sugar, ginger, and garlic. Bring to a boil, then reduce heat and simmer for 10 minutes until slightly thickened. Set aside.</li>
+            <li>Step 2: While the sauce cools, soak wooden skewers in water for at least 30 minutes to prevent burning during grilling.</li>
+            <li>Step 3: Thread chicken pieces and spring onions alternately onto the skewers, ensuring even spacing for even cooking.</li>
+            <li>Step 4: Preheat a grill or stovetop grill pan over medium-high heat. Lightly oil the surface to prevent sticking.</li>
+            <li>Step 5: Place the skewers on the grill and cook for about 3-4 minutes on each side, brushing with the sauce frequently.</li>
+            <li>Step 6: Continue grilling and basting until the chicken is fully cooked and slightly charred, about 10-12 minutes in total.</li>
+            <li>Step 7: Serve hot with extra sauce on the side, and enjoy the delicious, smoky Yakitori!</li>
+        </ul>
+
+        <a href="./japanese.html" class="back-link">← Back</a>
+    </div>
+
+</body>
+</html>

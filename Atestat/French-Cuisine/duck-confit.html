@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | Duck Confit</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://i.pinimg.com/736x/ee/cf/e2/eecfe24f6f4505c44fd82c5e7902918e.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
+
+        .title {
+            font-family: "Lancelot", serif;
+            font-size: 50px;
+            margin-top: 80px;
+        }
+
+        .video-container {
+            margin: 30px auto;
+            width: 80%;
+            max-width: 800px;
+            height: 400px;
+            background-color: #0A6847;
+            border: 2px solid #F3CA52;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #F6E9B2;
+        }
+
+        .recipe-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        ul { text-align: left; padding-left: 30px; font-size: 20px; }
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        ul li {
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="../Home/Atestat.html">Home</a>
+            <a href="../Home/recipes.html">Recipes</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="../Home/login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="title">
+        <h1>Duck Confit</h1>
+    </div>
+
+    <div class="video-container">
+        <iframe width="100%" height="100%" src="VIDEO_URL_HERE" frameborder="0"></iframe>
+    </div>
+
+    <div class="recipe-container">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>4 duck legs</li>
+            <li>2 tbsp (30 g) coarse salt</li>
+            <li>4 cloves garlic, minced</li>
+            <li>1 tbsp (15 g) fresh thyme leaves</li>
+            <li>1 tsp (5 g) black pepper</li>
+            <li>2 cups (500 g) duck fat</li>
+            <li>1 bay leaf</li>
+        </ul>
+
+        <h2>Steps:</h2>
+        <ul>
+            <li>Step 1: Rub the duck legs generously with salt, minced garlic, thyme, and black pepper. Place them in a dish, cover, and refrigerate for at least 12 hours or overnight. This curing process enhances the flavor and texture.</li>
+            <li>Step 2: Preheat the oven to 225°F (110°C). Rinse the duck legs under cold water to remove excess salt and pat them dry with a paper towel.</li>
+            <li>Step 3: In a heavy ovenproof pot, melt the duck fat over low heat. Add the bay leaf for extra aroma.</li>
+            <li>Step 4: Submerge the duck legs in the melted fat, ensuring they are fully covered. Place the pot in the oven and cook slowly for about 3-4 hours, until the meat is tender and easily pulls away from the bone.</li>
+            <li>Step 5: Once cooked, remove the duck legs from the fat and let them cool slightly. At this stage, they can be stored in the fat in the refrigerator for several weeks.</li>
+            <li>Step 6: To serve, heat a skillet over medium-high heat. Sear the duck legs skin-side down until golden and crispy, about 5 minutes.</li>
+            <li>Step 7: Serve hot with roasted potatoes or a fresh salad for a traditional French experience.</li>
+        </ul>
+
+        <a href="./french.html" class="back-link">← Back</a>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table | 1-Day Personal Chef Pack</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://thumbs.dreamstime.com/b/food-wallpaper-green-background-kitchen-pattern-design-room-fun-modern-143891950.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+            color: #F3CA52;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-left, .nav-right {
+            display: flex;
+            width: 100%;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-left { margin-left: 20px; }
+        .nav-right { justify-content: end; margin-right: 20px; }
+        .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
+        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
+
+        .service-container {
+            width: 80%;
+            max-width: 800px;
+            background-color: #0A6847;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 70px;
+        }
+
+        h2 { font-size: 26px; margin-bottom: 10px; }
+        p { font-size: 20px; margin-bottom: 20px; }
+        .option { background-color: #7ABA78; padding: 15px; border-radius: 5px; margin-top: 15px; }
+        .option h3 { color: #2C3930; }
+        .option p { color: #0A6847; }
+
+        .price {
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #F6E9B2;
+        }
+
+        .back-link { display: block; margin-top: 20px; font-size: 22px; color: #F3CA52; text-decoration: none; }
+        .back-link:hover { color: #F6E9B2; }
+
+        button {
+            background-color: #DCD7C9;
+            color: #2C3930;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0A6847;
+            color: #DCD7C9;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-left">
+            <a href="/Atestat/Home/Atestat.html">Home</a>
+            <a href="/Atestat/Home/recipes.html">Recipes</a>
+            <a href="cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="/Atestat/Home/login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="service-container">
+        <h2>Experience fine dining at home with a professional chef for a full day.</h2>
+        <p>Enjoy custom meals tailored to your preferences, with two convenient options.</p>
+        
+        <div class="option">
+            <h3>Bring Your Own Ingredients</h3>
+            <p>The chef will cook using the ingredients you provide, ensuring a personalized touch to your meal.</p>
+            <p class="price">$149 per day</p>
+            <button>Book Now</button>
+        </div>
+        
+        <div class="option">
+            <h3>Chef Provides Ingredients</h3>
+            <p>The chef will bring fresh, high-quality ingredients for your meal, with an additional charge.</p>
+            <p class="price">$199 per day</p>
+            <button>Book Now</button>
+        </div>
+    </div>
+    
+    <a href="../services.html" class="back-link" style="color: #2C3930; font-size: 45px;">← Back to Services</a>
+</body>
+</html>

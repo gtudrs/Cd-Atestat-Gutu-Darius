@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat Shop - Chef's Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Kurale", serif;
+            background-color: #7ABA78;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img.freepik.com/premium-vector/hand-drawn-meat-steak-beef-pork-lamb-grill-sausage-seamless-pattern_53562-9890.jpg?semt=ais_hybrid);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        nav{
+
+            background-color: #690B22;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: fixed;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-right a{
+            
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover{
+            background-color:#E07A5F ;
+            color: #690B22;
+        }
+
+        .nav-left{
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        
+        .nav-left a{
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            background-color:#E07A5F ;
+            color: #690B22;
+        }
+       
+        .products {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .product {
+            background-color:#E07A5F ;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 200px;
+            border: 2px solid #690B22;
+        }
+        .product img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .product button {
+            background-color: #690B22;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+        <div class="nav-left">
+            <a href="../Home/Atestat.html">Home</a>
+            <a href="../Home/recipes.html">Recipes</a>
+            <a href="#cart">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="../Home/login.html">Login</a>
+        </div>
+    </nav>
+    
+    
+    
+    <section class="products">
+
+        <div class="product-grid">
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://www.shutterstock.com/shutterstock/videos/16645813/thumb/1.jpg" height="150px" width="200px">
+                <h3>Chicken Breast</h3>
+                <p>$4.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://www.joesfreshpoultry.com.au/cdn/shop/products/chicken-thigh-fillet-raw.jpg?v=1658365095" height="150px" width="200px">
+                <h3>Chicken Thighs</h3>
+                <p>$4.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://media.istockphoto.com/id/618521330/photo/whole-raw-chicken.jpg?s=612x612&w=0&k=20&c=_bgglgq4ZdVSePwRDmOixCxrp5voltVGfzyRqb1lXso=" height="150px" width="200px">
+                <h3>Whole Chicken</h3>
+                <p>$3.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://media.istockphoto.com/id/1220949862/photo/raw-chicken-wings-organic-poultry-meat-black-background-top-view.jpg?s=612x612&w=0&k=20&c=U5qNMdfZ-Pfczta3fErCod30QSlgGdVu_FKrCoQ-9KA=" height="150px" width="200px">
+                <h3>Chicken Wings</h3>
+                <p>$5.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://www.shutterstock.com/image-photo/raw-turkey-breast-steaks-organic-600nw-1806303784.jpg" height="150px" width="200px">
+                <h3>Turkey Breast</h3>
+                <p>$6.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product" style="margin-top: 70px;">
+                <img src="https://media.istockphoto.com/id/1290106300/photo/fresh-raw-chicken-mince-on-a-dark-wooden-cutting-board.jpg?s=612x612&w=0&k=20&c=mN71vM38h6ca-NzHtiAa29HLyiI6PncPDK3mdFTnc8k=" height="150px" width="200px">
+                <h3>Ground Turkey</h3>
+                <p>$5.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1300477432/photo/raw-duck-breast-pieces-on-dark-slate-background.jpg?s=612x612&w=0&k=20&c=w7VhiZlZ8-Rou2BIOYRKG3lMrxY0aWGIXWGif8N0_V0=" height="150px" width="200px">
+                <h3>Duck Meat</h3>
+                <p>$7.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://t4.ftcdn.net/jpg/05/04/26/47/360_F_504264715_KcICDvfhGny4RFsuAhkevPWeRDa8bV4r.jpg" height="150px" width="200px">
+                <h3>Goose Meat</h3>
+                <p>$8.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://huntresssteak.com/wp-content/uploads/2024/03/Prime-Bone-in-Ribeye-Steak-Huntress-scaled.jpeg" height="150px" width="200px">
+                <h3>Beef Ribeye</h3>
+                <p>$14.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.themeatman.co.uk/cdn/shop/files/sirloinsteaks2023.jpg?v=1698143790" height="150px" width="200px">
+                <h3>Beef Sirloin</h3>
+                <p>$12.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.shutterstock.com/image-photo/fresh-raw-beef-meat-whole-600nw-1021135813.jpg" height="150px" width="200px">
+                <h3>Beef Tenderloin</h3>
+                <p>$19.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlQn_y1uIVCxw_3gnkmPfmSP5ryiQs7GCd_A&s" height="150px" width="200px">
+                <h3>Ground Beef</h3>
+                <p>$7.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.meatemporium.com.au/cdn/shop/collections/image_1024x1024.png?v=1650502378" height="150px" width="200px">
+                <h3>Lamb Chops</h3>
+                <p>$16.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://static.vecteezy.com/system/resources/previews/053/595/239/non_2x/marinated-raw-lamb-mutton-leg-thigh-with-thyme-and-spices-black-background-top-view-photo.jpg" height="150px" width="200px">
+                <h3>Lamb Leg</h3>
+                <p>$13.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/1389082139/photo/fresh-raw-lamb-shanks-with-herbs-and-spices-mutton-meat-black-background-top-view.jpg?s=612x612&w=0&k=20&c=d0dgfCJD5ijCx4U3PK31IIY9u5vK10-DNm0myyH2VjE=" height="150px" width="200px">
+                <h3>Goat Meat</h3>
+                <p>$11.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://previews.123rf.com/images/composterbox/composterbox2101/composterbox210100135/161505322-marbled-raw-pork-chops-meat-steak-or-tomahawk-dark-wooden-background-top-view.jpg" height="150px" width="200px">
+                <h3>Pork Chops</h3>
+                <p>$6.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/raw-pork-tenderloin-meat-marble-board-black-background-top-view_89816-30614.jpg" height="150px" width="200px">
+                <h3>Pork Tenderloin</h3>
+                <p>$8.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://thumbs.dreamstime.com/b/rack-raw-pork-spare-ribs-seasoned-spices-black-background-top-view-169125991.jpg" height="150px" width="200px">
+                <h3>Pork Ribs</h3>
+                <p>$7.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/raw-minced-pork-black-background-top-view-space-text_89816-7493.jpg" height="150px" width="200px">
+                <h3>Ground Pork</h3>
+                <p>$5.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2NZADPIldJsGtSapURShBRY8nkeWcQd1riQ&s" height="150px" width="200px">
+                <h3>Bacon</h3>
+                <p>$10.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/raw-sausages-dark-background_249006-2232.jpg" height="150px" width="200px">
+                <h3>Pork Sausages</h3>
+                <p>$9.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://www.dicksonsfarmstand.com/cdn/shop/products/gammonnew_1024x1024.jpg?v=1638725644" height="150px" width="200px">
+                <h3>Ham</h3>
+                <p>$8.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG3dyokTN-hEQwdRBFl1z_0GSdWFdC_USg2Q&s" height="150px" width="200px">
+                <h3>Salami</h3>
+                <p>$12.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://media.istockphoto.com/id/922700684/photo/raw-veal-cutlet-at-black-slate-plate.jpg?s=612x612&w=0&k=20&c=yZdTBiaummnn39lZDLxyWe8WWmarOEQ-saiG0bnHt0E=" height="150px" width="200px">
+                <h3>Veal Cutlet</h3>
+                <p>$15.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://ottomanelli.com/wp-content/uploads/2020/08/ossobucco.jpg" height="150px" width="200px">
+                <h3>Veal Shank</h3>
+                <p>$13.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/raw-rabbit-meat-with-spice-ingredients-set-old-dark-wooden-table-background-with-copy-space-text_249006-14047.jpg" height="150px" width="200px">
+                <h3>Rabbit Meat</h3>
+                <p>$9.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/fresh-raw-meat-quails-ready-cooking-dark-wooden-background_249006-14136.jpg" height="150px" width="200px">
+                <h3>Quail Meat</h3>
+                <p>$11.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://img.freepik.com/premium-photo/raw-wild-game-meat-venison-dear-ready-cooking-dark-background-top-view_89816-55924.jpg" height="150px" width="200px">
+                <h3>Venison (Deer Meat)</h3>
+                <p>$17.49/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://t4.ftcdn.net/jpg/03/74/52/37/360_F_374523768_yB9KfQ2f8nmEj5adG2Zq8GjbTEzLG8a5.jpg" height="150px" width="200px">
+                <h3>Bison Meat</h3>
+                <p>$18.99/kg</p>
+                <button>Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

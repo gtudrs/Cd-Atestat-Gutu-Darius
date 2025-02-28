@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef's Table</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <style>
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Kurale", serif;
+            overflow: hidden;
+        }
+
+        nav{
+
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-right a{
+            
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+
+        }
+
+        .nav-left{
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+        
+        .nav-left a{
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+        }
+
+        .ttlt {
+         font-family: "Lancelot", serif;
+         font-weight: 400;
+         font-style: normal;
+         font-size: 60px;
+         color: #F3CA52;
+         margin-left: 10px;
+         margin-top: 10px;
+        }
+
+        .strt{
+         font-family: "Kurale", serif;
+         font-weight: 400;
+         font-style: normal;
+         width: 550px;
+         color: #F3CA52;
+         margin-left: 10px;
+         font-size: 20px;
+        }
+
+        body {
+         background-image: url(./food-4k-m37wpodzrcbv5gvw.jpg);
+         background-repeat: no-repeat;
+         background-size: cover;
+        }
+
+        .image-links {
+         display: flex;
+         justify-content: center;
+         gap: 17px;
+         padding: 20px;
+         margin-top: 20px;
+         justify-content: flex-start;
+        }
+    
+        .image-links a {
+         display: inline-block;
+         transition: transform 0.3s ease-in-out;
+        }
+    
+        .image-links img {
+         width: 120px;
+         height: 180px;
+         border-radius: 8px;
+         object-fit: cover;
+         box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+         border: 2px solid #F3CA52;
+        }
+    
+     .image-links a:hover {
+        transform-origin: center;
+     }
+
+    </style>
+
+</head>
+<body>
+
+    <nav>
+
+        <img src="./culinary.PNG" width="60px" height="60px" />
+
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="#cart">Cart</a>
+            
+        </div>
+
+        <div class="nav-right">
+            <a href="#about">About Us</a>
+            <a href="#contact">Contact</a>
+            <a href="./login.html">Login</a>
+        </div>
+
+    </nav>
+
+    <div class="ttlt">
+        <h1>Chef's Table</h1>
+    </div>
+
+    <div class="strt">
+
+        <h3>Chef's Table brings premium ingredients, cookware, 
+            and tools to elevate your cooking at home. Whether you're a beginner or a seasoned chef, 
+            you'll find everything you need to create restaurant-quality meals at home.</h3>
+
+    </div>
+
+    <section class="image-links">
+        <a href="../Menu/vegetables.html"><img src="https://img.freepik.com/premium-photo/vegetable-vertical-background-healthy-food-autumn-harvest-fresh-vegetables-top-view-organic-concept_217690-429.jpg?w=360"></a>
+        <a href="../Menu/meat.html"><img src="https://img.freepik.com/premium-photo/vertical-view-fresh-raw-red-meats-green-garlics-brown-wooden-cutting-board-tomatoes-pepper_926199-3618403.jpg"></a>
+        <a href="../Menu/spice.html"><img src="https://i.pinimg.com/736x/ea/a9/31/eaa9315bffbb72f35c1d9c84819f29a4.jpg"></a>
+        <a href="../Menu/cookware.html"><img src="https://assets.wsimgs.com/wsimgs/rk/images/dp/wcm/202440/0006/all-clad-precision-stainless-steel-balloon-whisk-j.jpg"></a>
+        <a href="../Menu/services.html"><img src="https://img.freepik.com/premium-photo/cooking-hot-food-chef-black-background-ai-generative_955712-5245.jpg"></a>
+    </section>
+
+    
+
+</body>
+</html>
