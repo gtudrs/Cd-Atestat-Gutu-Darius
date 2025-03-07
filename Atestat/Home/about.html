@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Chef's Table</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Kurale", serif;
+            background-image: url(https://files.oaiusercontent.com/file-PQV6hLzRtbSNPAWkBpsJ3b?se=2025-03-01T13%3A47%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ded564a49-b9da-4f87-9284-de5367eec9e0.webp&sig=yBYMywzbBRBGMMuXvGdK9hyue5knXBLfaitP08DRnU4%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: #F3CA52;
+            text-align: center;
+            height: 100vh;
+            overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        nav{
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-right{
+            display: flex;
+            justify-content: end;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 20px;
+        }
+
+        .nav-right a{
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-right a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+        }
+
+        .nav-left{
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .nav-left a{
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .nav-left a:hover{
+            background-color:#F6E9B2 ;
+            color: #7ABA78;
+        }
+
+        .content-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 225px;
+            gap: 30px;
+            height: 100px;
+        }
+
+        .map-container {
+            width: 400px;
+            height: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.4);
+            flex-shrink: 0;
+            margin-left: 20px;
+            margin-right: 100px;
+        }
+
+        .container {
+            max-width: 750px;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 15px;
+            backdrop-filter: blur(8px);
+            box-shadow: 0px 4px 15px rgba(0, 255, 127, 0.4);
+            flex: 1;
+        }
+
+        .about-title {
+            font-family: "Lancelot", serif;
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #A3E4A3;
+        }
+
+        .about-text {
+            font-size: 20px;
+            color: #A3E4A3;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+        <div class="nav-left">
+            <a href="./Atestat.html">Home</a>
+            <a href="./recipes.html">Recipes</a>
+            <a href="./cart.html">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./login.html">Login</a>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.1341529793742!2d-73.99778172798065!3d40.75612317502524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a4d00525589%3A0xa0ddf3ff54eadbcd!2sThe%20Chef&#39;s%20Table%20at%20Brooklyn%20Fare!5e0!3m2!1sro!2sro!4v1740840161049!5m2!1sro!2sro"
+                width="100%"
+                height="100%"
+                frameborder="0"
+                style="border:0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="container">
+            <h1 class="about-title">About Us</h1>
+            <p class="about-text">
+                Welcome to Chef's Table, where passion meets culinary artistry. 
+                Our mission is to bring the finest ingredients, expert craftsmanship,
+                and a deep appreciation for gourmet cuisine to food lovers everywhere.
+                Whether you're a seasoned chef or a home cook, our resources, tools,
+                and expertise will elevate your culinary journey.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
