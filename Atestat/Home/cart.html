@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Chef's Table</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(https://t4.ftcdn.net/jpg/07/05/90/89/360_F_705908978_j5cyGZ4ohebTCH0nvF6S820qe7EqvPN8.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: "Kurale", serif;
+        }
+
+        nav {
+            background-color: #0A6847;
+            padding: 10px;
+            text-align: center;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right {
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 25px;
+            justify-content: end;
+        }
+
+        .nav-left {
+            display: flex;
+            flex-grow: 1;
+            gap: 50px;
+            font-size: 25px;
+            margin-left: 20px;
+        }
+
+        .nav-right a, .nav-left a {
+            color: #F3CA52;
+            text-decoration: none;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #F6E9B2;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border-bottom: 1px solid #ccc;
+            font-size: 18px;
+        }
+
+        .cart-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .cart-item .item-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .cart-item button {
+            background-color: #0A6847;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .cart-item button:hover {
+            background-color: #7ABA78;
+        }
+
+        .total {
+            font-size: 22px;
+            margin-top: 20px;
+            text-align: right;
+            font-weight: bold;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+        <div class="nav-left">
+            <a href="./Atestat.html" class="anim1">Home</a>
+            <a href="./recipes.html" class="anim1">Recipes</a>
+            <a href="./cart.html" class="anim1">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="./about.html" class="anim2">About Us</a>
+            <a href="./contact.html" class="anim2">Contact</a>
+            <a href="./login.html" class="anim2">Login</a>
+        </div>
+    </nav>
+
+    <div class="cart-container">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+            <div class="cart-item">
+                <div class="item-info">
+                    <img src="https://via.placeholder.com/50">
+                    <span>Product Name - $Price</span>
+                </div>
+                <button>Remove</button>
+            </div>
+            
+        </div>
+        <p class="total">Total: $00.00</p>
+    </div>
+</body>
+</html>

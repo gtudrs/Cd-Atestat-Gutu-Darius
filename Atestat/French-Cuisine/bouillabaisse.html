@@ -29,7 +29,7 @@
             background-color: #0A6847;
             padding: 10px;
             text-align: center;
-            height: 50px;
+            height: 70px;
             display: flex;
             align-items: center;
             position: fixed;
@@ -42,13 +42,12 @@
             display: flex;
             width: 100%;
             gap: 50px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .nav-left { margin-left: 20px; }
         .nav-right { justify-content: end; margin-right: 20px; }
         .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
-        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
 
         .title {
             font-family: "Lancelot", serif;
@@ -89,20 +88,64 @@
             margin-bottom: 20px;
         }
 
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
+
     </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-left">
-            <a href="../Home/Atestat.html">Home</a>
-            <a href="../Home/recipes.html">Recipes</a>
-            <a href="../Home/cart.html">Cart</a>
+            <a href="../Home/Atestat.html" class="anim1">Home</a>
+            <a href="../Home/recipes.html" class="anim1">Recipes</a>
+            <a href="../Home/cart.html" class="anim1">Cart</a>
         </div>
         <div class="nav-right">
-            <a href="../Home/about.html">About Us</a>
-            <a href="../Home/contact.html">Contact</a>
-            <a href="../Home/login.html">Login</a>
+            <a href="../Home/about.html" class="anim2">About Us</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Login</a>
         </div>
     </nav>
 

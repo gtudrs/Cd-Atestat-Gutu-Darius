@@ -17,7 +17,7 @@
         }
 
         body {
-            background-image: url(https://files.oaiusercontent.com/file-2CEsTGSNmwNkmkbWWh25K3?se=2025-03-01T15%3A25%3A22Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Db5fa142e-0d8b-4053-b4da-36c4f031ca16.webp&sig=MOqN8NbvhaLarzjEndxuv%2BcMbMo9lL0D77wNJPp5m4Q%3D);
+            background-image: url(https://e0.pxfuel.com/wallpapers/470/199/desktop-wallpaper-texture-gray-wood-texture.jpg);
             background-repeat: no-repeat;
             background-size: cover;
             font-family: "Kurale", serif;
@@ -41,7 +41,7 @@
             display: flex;
             width: 100%;
             gap: 50px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .nav-left {
@@ -56,11 +56,6 @@
         .nav-left a, .nav-right a {
             color: #F3CA52;
             text-decoration: none;
-        }
-
-        .nav-left a:hover, .nav-right a:hover {
-            background-color: #F6E9B2;
-            color: #7ABA78;
         }
 
         .title {
@@ -116,6 +111,50 @@
         .spacer {
             height: 50px;
         }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
     </style>
 
 </head>
@@ -125,15 +164,15 @@
         <img src="./culinary.PNG" width="60px" height="60px" />
 
         <div class="nav-left">
-            <a href="./Atestat.html">Home</a>
-            <a href="./recipes.html">Recipe</a>
-            <a href="cart.html">Cart</a>
+            <a href="./Atestat.html" class="anim1">Home</a>
+            <a href="./recipes.html" class="anim1">Recipes</a>
+            <a href="cart.html" class="anim1">Cart</a>
         </div>
 
         <div class="nav-right">
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="login.html">Login</a>
+            <a href="about.html" class="anim2">About Us</a>
+            <a href="contact.html" class="anim2">Contact</a>
+            <a href="login.html" class="anim2">Login</a>
         </div>
     </nav>
 

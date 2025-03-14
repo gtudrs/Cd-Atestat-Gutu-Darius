@@ -12,8 +12,9 @@
     <style>
         
         *{
-            margin: 0;
-            padding: 0;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
         }
 
         body {
@@ -22,11 +23,10 @@
         }
 
         nav{
-
             background-color: #0A6847;
             padding: 10px;
             text-align: center;
-            height: 50px;
+            height: 70px;
             display: flex;
             align-items: center;
         }
@@ -36,11 +36,10 @@
             justify-content: end;
             flex-grow: 1;
             gap: 50px;
-            font-size: 25px;
+            font-size: 20px;
         }
 
         .nav-right a{
-            
             color: #F3CA52;
             text-decoration: none;
         }
@@ -50,12 +49,56 @@
             flex-grow: 1;
             gap: 50px;
             margin-left: 20px;
-            font-size: 25px;
+            font-size:20px;
         }
-        
+
         .nav-left a{
             color: #F3CA52;
             text-decoration: none;
+        }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
         }
 
         .ttlt {
@@ -110,50 +153,7 @@
      .image-links a:hover {
         transform-origin: center;
      }
-     
-     .anim1 {
-            color: #fff;
-            cursor: pointer;
-            position: relative;
-        }
 
-        .anim1::after {
-            content: '';
-            position: absolute;
-            height: 3px;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            background: lightgreen;
-            transition: width .2s;
-            border-radius: 20px;
-        }
-
-        .anim1:hover:after {
-            width: 100%;
-        }
-
-        .anim2 {
-            color: #fff;
-            cursor: pointer;
-            position: relative;
-        }
-
-        .anim2::after {
-            content: '';
-            position: absolute;
-            height: 3px;
-            right: 0;
-            bottom: 0;
-            width: 0;
-            background: lightgreen;
-            transition: width .2s;
-            border-radius: 20px;
-        }
-
-        .anim2:hover:after {
-            width: 100%;
-        }
     </style>
 
 </head>

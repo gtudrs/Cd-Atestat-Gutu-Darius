@@ -29,7 +29,7 @@
             background-color: #0A6847;
             padding: 10px;
             text-align: center;
-            height: 50px;
+            height: 70px;
             display: flex;
             align-items: center;
             position: fixed;
@@ -42,13 +42,12 @@
             display: flex;
             width: 100%;
             gap: 50px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .nav-left { margin-left: 20px; }
         .nav-right { justify-content: end; margin-right: 20px; }
         .nav-left a, .nav-right a { color: #F3CA52; text-decoration: none; }
-        .nav-left a:hover, .nav-right a:hover { background-color: #F6E9B2; color: #7ABA78; }
 
         .service-container {
             width: 80%;
@@ -58,7 +57,7 @@
             border-radius: 10px;
             margin: 20px auto;
             box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            margin-top: 70px;
+            margin-top: 90px;
         }
 
         h2 { font-size: 26px; margin-bottom: 10px; }
@@ -90,20 +89,64 @@
             background-color: #0A6847;
             color: #DCD7C9;
         }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: #7ABA78;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: #7ABA78;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
 
     <nav>
         <div class="nav-left">
-            <a href="/Atestat/Home/Atestat.html">Home</a>
-            <a href="/Atestat/Home/recipes.html">Recipes</a>
-            <a href="/Atestat/Home/cart.html">Cart</a>
+            <a href="/Atestat/Home/Atestat.html" class="anim1">Home</a>
+            <a href="/Atestat/Home/recipes.html" class="anim1">Recipes</a>
+            <a href="/Atestat/Home/cart.html" class="anim1">Cart</a>
         </div>
         <div class="nav-right">
-            <a href="/Atestat/Home/about.html">About Us</a>
-            <a href="/Atestat/Home/contact.html">Contact</a>
-            <a href="/Atestat/Home/login.html">Login</a>
+            <a href="/Atestat/Home/about.html" class="anim2">About Us</a>
+            <a href="/Atestat/Home/contact.html" class="anim2">Contact</a>
+            <a href="/Atestat/Home/login.html" class="anim2">Login</a>
         </div>
     </nav>
 

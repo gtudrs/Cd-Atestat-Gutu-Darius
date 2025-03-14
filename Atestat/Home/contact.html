@@ -18,10 +18,10 @@
 
         body {
             font-family: "Kurale", serif;
-            background-image: url(https://files.oaiusercontent.com/file-YXkxWQrRDJqn8drTkAqbha?se=2025-03-01T15%3A27%3A00Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D0c83c153-f446-4f47-8630-234718a5c77e.webp&sig=IVuOtf6JVhGTYO9BC8uYLA2toZVMxDYP89jBDvxCK5k%3D);
+            background-image: url(https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
             background-repeat: no-repeat;
             background-size: cover;
-            color: #0A6847;
+            color: #F3CA52;
             text-align: center;
             overflow: hidden;
 
@@ -53,7 +53,7 @@
             justify-content: end;
             flex-grow: 1;
             gap: 50px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .nav-right a{
@@ -62,18 +62,12 @@
             text-decoration: none;
         }
 
-        .nav-right a:hover{
-            background-color:#F6E9B2 ;
-            color: #7ABA78;
-
-        }
-
         .nav-left{
             display: flex;
             flex-grow: 1;
             gap: 50px;
             margin-left: 20px;
-            font-size: 20px;
+            font-size: 25px;
         }
         
         .nav-left a{
@@ -81,14 +75,9 @@
             text-decoration: none;
         }
 
-        .nav-left a:hover{
-            background-color:#F6E9B2 ;
-            color: #7ABA78;
-        }
-
         ::placeholder {
-            color: #0A6847;
-            opacity: 1;
+            color: #F3CA52;
+            opacity: .5;
         }
 
         .container {
@@ -106,7 +95,7 @@
             font-family: "Lancelot", serif;
             font-size: 42px;
             margin-bottom: 10px;
-            color: #0A6847;
+            color: #F3CA52;
         }
 
         .contact-form input, .contact-form textarea {
@@ -117,7 +106,7 @@
             border-radius: 8px;
             font-size: 18px;
             background: rgba(255, 255, 255, 0.2);
-            color: #0A6847;
+            color: #F3CA52;
             backdrop-filter: blur(5px);
             border: 1px solid #0A6847;
         }
@@ -144,6 +133,50 @@
             background: #7ABA78;
             color: white;
         }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: lightgreen;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -153,16 +186,16 @@
         <img src="./culinary.PNG" width="60px" height="60px" />
 
         <div class="nav-left">
-            <a href="./Atestat.html">Home</a>
-            <a href="./recipes.html">Recipes</a>
-            <a href="./cart.html">Cart</a>
+            <a href="./Atestat.html" class="anim1">Home</a>
+            <a href="./recipes.html" class="anim1">Recipes</a>
+            <a href="./cart.html" class="anim1">Cart</a>
             
         </div>
 
         <div class="nav-right">
-            <a href="./about.html">About Us</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./login.html">Login</a>
+            <a href="./about.html" class="anim2">About Us</a>
+            <a href="./contact.html" class="anim2">Contact</a>
+            <a href="./login.html" class="anim2">Login</a>
         </div>
 
     </nav>
@@ -180,7 +213,7 @@
     </div>
 
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzD-XI9OH5PPDngBtY4u-qKnjUmJG1RLOurnBp_DtbfK6_6tfbvHxV88jzmowsYZ3Ppkw/exec';
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbx2mBmq3t1LAw0JzgJ2Yl6lxIyjgb38bw6ORAyAjUPsBbkt7JYBiHRazmWfuyINmSiv/exec';
         const form = document.forms['submit-to-google-sheet'];
       
         form.addEventListener('submit', e => {

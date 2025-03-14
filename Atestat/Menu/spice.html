@@ -40,7 +40,7 @@
             justify-content: end;
             flex-grow: 1;
             gap: 50px;
-            font-size: 20px;
+            font-size: 25px;
         }
 
         .nav-right a{
@@ -49,27 +49,17 @@
             text-decoration: none;
         }
 
-        .nav-right a:hover{
-            background-color:#B9B28A ;
-            color: #504B38;
-        }
-
         .nav-left{
             display: flex;
             flex-grow: 1;
             gap: 50px;
             margin-left: 20px;
-            font-size: 20px;
+            font-size: 25px;
         }
         
         .nav-left a{
             color: #B9B28A;
             text-decoration: none;
-        }
-
-        .nav-left a:hover{
-            background-color:#B9B28A ;
-            color: #504B38;
         }
        
         .products {
@@ -104,6 +94,50 @@
             cursor: pointer;
             border-radius: 5px;
         }
+
+        .anim1 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim1::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: #B9B28A;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim1:hover:after {
+            width: 100%;
+        }
+
+        .anim2 {
+            color: #fff;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .anim2::after {
+            content: '';
+            position: absolute;
+            height: 3px;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            background: #B9B28A;
+            transition: width .2s;
+            border-radius: 20px;
+        }
+
+        .anim2:hover:after {
+            width: 100%;
+        }
         
     </style>
 </head>
@@ -111,14 +145,14 @@
     <nav>
         <img src="./culinary.PNG" width="60px" height="60px" />
         <div class="nav-left">
-            <a href="../Home/Atestat.html">Home</a>
-            <a href="../Home/recipes.html">Recipes</a>
-            <a href="../Home/cart.html">Cart</a>
+            <a href="../Home/Atestat.html" class="anim1">Home</a>
+            <a href="../Home/recipes.html" class="anim1">Recipes</a>
+            <a href="../Home/cart.html" class="anim1">Cart</a>
         </div>
         <div class="nav-right">
-            <a href="../Home/about.html">About Us</a>
-            <a href="../Home/contact.html">Contact</a>
-            <a href="../Home/login.html">Login</a>
+            <a href="../Home/about.html" class="anim2">About Us</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Login</a>
         </div>
     </nav>
     
@@ -131,203 +165,203 @@
             <div class="product" style="margin-top: 70px;">
                 <img src="https://media.istockphoto.com/id/1197314160/photo/sea-salt.jpg?s=612x612&w=0&k=20&c=Wi91MhzKWlFk_HLBwdnmOT4ccdTTCUaXA09I6Gove30=" height="150px" width="200px">
                 <h3>Kosher Salt</h3>
-                <p>$2.99/kg</p>
+                <p>$0.30/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product" style="margin-top: 70px;">
                 <img src="https://static.vecteezy.com/system/resources/thumbnails/051/443/935/small/black-pepper-seeds-in-a-glass-bowl-surrounded-by-black-background-free-photo.jpg" height="150px" width="200px">
                 <h3>Black Pepper</h3>
-                <p>$12.99/kg</p>
+                <p>$1.30/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product" style="margin-top: 70px;">
                 <img src="https://media.istockphoto.com/id/1050973194/photo/white-pepper.jpg?s=612x612&w=0&k=20&c=DjpIMo6xVDjGSGEorY3swcUmhlbgareBqscOhBOUh90=" height="150px" width="200px">
                 <h3>White Pepper</h3>
-                <p>$13.49/kg</p>
+                <p>$1.35/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product" style="margin-top: 70px;">
                 <img src="https://www.thedailymeal.com/img/gallery/12-tips-for-cooking-with-paprika/intro-1673345885.jpg" height="150px" width="200px">
                 <h3>Paprika</h3>
-                <p>$9.99/kg</p>
+                <p>$1.00/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product" style="margin-top: 70px;">
                 <img src="https://media.istockphoto.com/id/1135096220/photo/red-chili-pepper-flakes-shot-from-above.jpg?s=612x612&w=0&k=20&c=digaaiNiF3zciy5WNgJ9wUbMxK1o4yKYd7pK7psRk2M=" height="150px" width="200px">
                 <h3>Cayenne Pepper</h3>
-                <p>$10.99/kg</p>
+                <p>$1.10/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product" style="margin-top: 70px;">
                 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCTrYRc9lq_yOyAcEkgF9QEPAXJ2tnE34Snpi9OIhVuSbdc1b75eJiWBLs9Dnktg2RByg&usqp=CAU" height="150px" width="200px">
                 <h3>Chili Powder</h3>
-                <p>$9.49/kg</p>
+                <p>$0.95/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://media.istockphoto.com/id/523396742/photo/caraway-seeds.jpg?s=612x612&w=0&k=20&c=ciq0ELKdg33FTDlo2YTtBKy7DCsGjuYv85cl8I7zl5I=" height="150px" width="200px">
                 <h3>Cumin</h3>
-                <p>$8.99/kg</p>
+                <p>$0.90/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://www.shutterstock.com/image-photo/coriander-powdercoriander-seeds-on-white-600nw-1863015997.jpg" height="150px" width="200px">
                 <h3>Coriander Powder</h3>
-                <p>$7.99/kg</p>
+                <p>$0.80/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://media.istockphoto.com/id/1270662940/photo/turmeric-powder-in-a-bowl-shot-from-above.jpg?s=612x612&w=0&k=20&c=lVUHQpiC2nk465b22BuG-A_AyhSrrPOpnjKTeQnZ-fg=" height="150px" width="200px">
                 <h3>Turmeric</h3>
-                <p>$6.99/kg</p>
+                <p>$0.70/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://t4.ftcdn.net/jpg/11/11/52/63/360_F_1111526356_EWtlGHutYJ19yjSvDvbLi9s94FFlHamE.jpg" height="150px" width="200px">
                 <h3>Ginger Powder</h3>
-                <p>$10.49/kg</p>
+                <p>$1.05/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://5.imimg.com/data5/SELLER/Default/2025/1/482648257/MI/VO/ZU/6422160/dehydrated-garlic-powder-500x500.jpg" height="150px" width="200px">
                 <h3>Garlic Powder</h3>
-                <p>$8.49/kg</p>
+                <p>$0.85/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://t3.ftcdn.net/jpg/09/58/20/40/360_F_958204007_DhRD0PjJXTq9QDf9IV6TTLFqTaH2z6xh.jpg" height="150px" width="200px">
                 <h3>Onion Powder</h3>
-                <p>$7.99/kg</p>
+                <p>$0.80/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://media.istockphoto.com/id/1135797075/photo/dried-oregano-shot-from-above.jpg?s=612x612&w=0&k=20&c=zx4yAfL2hbH37JV1bXUCL5KCucW6TcOJcFkZtv0OI9M=" height="150px" width="200px">
                 <h3>Oregano (dried)</h3>
-                <p>$9.49/kg</p>
+                <p>$0.95/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://media.istockphoto.com/id/639235056/photo/dried-and-fresh-basil.jpg?s=612x612&w=0&k=20&c=t7Xn6XO7fi2vXC1kufFje99u32QgZ9LCeCkj4T_m5Kc=" height="150px" width="200px">
                 <h3>Basil (dried)</h3>
-                <p>$8.99/kg</p>
+                <p>$0.90/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://www.shutterstock.com/shutterstock/videos/1062929545/thumb/6.jpg?ip=x480" height="150px" width="200px">
                 <h3>Thyme (dried)</h3>
-                <p>$9.29/kg</p>
+                <p>$0.93/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://funwithsoap.co.za/wp-content/uploads/2022/11/dried-rosemary.png" height="150px" width="200px">
                 <h3>Rosemary (dried)</h3>
-                <p>$8.79/kg</p>
+                <p>$0.88/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://transform-cf1.nws.ai/https%3A//cdn.thenewsroom.io/platform/story_media/1288820281/coverremini-enhanced-2024-02-27t103746053.jpg/w_1200,c_limit/" height="150px" width="200px">
                 <h3>Bay Leaves</h3>
-                <p>$7.49/kg</p>
+                <p>$0.75/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://img.pikbest.com/ai/illus_our/20230413/70c630130be00870eae26aed8b227c54.jpg!w700wp" height="150px" width="200px">
                 <h3>Cinnamon</h3>
-                <p>$13.99/kg</p>
+                <p>$1.40/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://st2.depositphotos.com/3163989/7418/i/450/depositphotos_74186033-stock-photo-spices-and-herbs-in-wooden.jpg" height="150px" width="200px">
                 <h3>Cloves</h3>
-                <p>$14.99/kg</p>
+                <p>$1.50/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://img.freepik.com/premium-photo/aesthetic-wooden-spoon-spilling-ground-nutmeg-black-background_267830-10229.jpg" height="150px" width="200px">
                 <h3>Nutmeg</h3>
-                <p>$15.49/kg</p>
+                <p>$1.55/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://png.pngtree.com/background/20230616/original/pngtree-mustard-seeds-next-to-a-stone-pot-picture-image_3632018.jpg" height="150px" width="200px">
                 <h3>Mustard Seeds</h3>
-                <p>$9.99/kg</p>
+                <p>$1.00/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://img.freepik.com/free-photo/close-up-saffron-still-life-arrangement_23-2149186963.jpg?semt=ais_hybrid" height="150px" width="200px">
                 <h3>Saffron</h3>
-                <p>$49.99/kg</p>
+                <p>$5.00/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://media.istockphoto.com/id/1780527540/photo/caraway-seeds.jpg?s=612x612&w=0&k=20&c=Lj8mxc6461ME92h9bGLKYywB6QP9JUSPQiUArqfDixk=" height="150px" width="200px">
                 <h3>Caraway Seeds</h3>
-                <p>$8.99/kg</p>
+                <p>$0.90/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://img.pikbest.com/ai/illus_our/20230424/87dccb4ac161c73e88b1e70f92b7d26c.jpg!bw700" height="150px" width="200px">
                 <h3>Fennel Seeds</h3>
-                <p>$9.49/kg</p>
+                <p>$0.95/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://t3.ftcdn.net/jpg/05/26/53/90/360_F_526539078_hN8hpHQXfbqQiHaqQKzGDFnFAz8RctwK.jpg" height="150px" width="200px">
                 <h3>Dill Seeds</h3>
-                <p>$7.99/kg</p>
+                <p>$0.80/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://cbx-prod.b-cdn.net/COLOURBOX62071507.jpg?width=800&height=800&quality=70" height="150px" width="200px">
                 <h3>Star Anise</h3>
-                <p>$15.99/kg</p>
+                <p>$1.60/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://t4.ftcdn.net/jpg/10/46/81/13/360_F_1046811397_8bOKvHcHE3ifWvctOF54SW87XC16DE9d.jpg" height="150px" width="200px">
                 <h3>Annatto Seeds</h3>
-                <p>$7.49/kg</p>
+                <p>$0.75/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://png.pngtree.com/thumb_back/fh260/background/20230615/pngtree-tumeric-powder-in-a-bowl-on-a-wooden-surface-image_2880509.jpg" height="150px" width="200px">
                 <h3>Curry Powder</h3>
-                <p>$9.99/kg</p>
+                <p>$1.00/100g</p>
                 <button>Add to Cart</button>
             </div>
 
             <div class="product">
                 <img src="https://m.media-amazon.com/images/I/61TqZVFMQLL._AC_UF350,350_QL80_.jpg" height="150px" width="200px">
                 <h3>Tonka Beans</h3>
-                <p>$29.99/kg</p>
+                <p>$3.00/100g</p>
                 <button>Add to Cart</button>
             </div>
 
