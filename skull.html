@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Human Skull - Explicit Guide</title>
+    
+    <!-- Load Three.js -->
+    <script src="https://unpkg.com/three@0.128.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://unpkg.com/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    
+    <style>
+        body { margin: 0; overflow: hidden; background-color: #111; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script>
+        /** STEP 1: CREATE THE SCENE **/
+        const scene = new THREE.Scene(); // This is where all objects will be added
+
+        /** STEP 2: CREATE AND POSITION THE CAMERA **/
+        const camera = new THREE.PerspectiveCamera(
+            75, // Field of view (FOV)
+            window.innerWidth / window.innerHeight, // Aspect ratio
+            0.1, // Near clipping plane
+            1000 // Far clipping plane
+        );
+        camera.position.set(0, 1, 3); // Set initial position of the camera
+
+        /** STEP 3: CREATE THE RENDERER **/
+        const renderer = new THREE.WebGLRenderer({ antialias: true }); // Enable anti-aliasing for smooth edges
+        renderer.setSize(window.innerWidth, window.innerHeight); // Fullscreen canvas
+        document.body.appendChild(renderer.domElement); // Attach renderer to HTML body
+
+        /** STEP 4: ADD ORBIT CONTROLS **/
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true; // Smooth rotation
+        controls.dampingFactor = 0.1; // Reduce abrupt movements
+        controls.rotateSpeed = 1.2; // Adjust rotation speed
+        controls.zoomSpeed = 1.2; // Adjust zoom speed
+
+        /** STEP 5: ADD LIGHTING **/
+        const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+        directionalLight.position.set(3, 5, 2); // Position the light source
+        scene.add(directionalLight);
+        
+        const ambientLight = new THREE.AmbientLight(0xffffff, 1.5); // General soft light
+        scene.add(ambientLight);
+
+        /** STEP 6: LOAD THE 3D HUMAN SKULL MODEL **/
+        const loader = new THREE.GLTFLoader(); // Use GLTFLoader to load external 3D models
+        let skull;
+        loader.load(
+            'https://cdn.jsdelivr.net/gh/KhronosGroup/glTF-Sample-Models/2.0/Skull/glTF/Skull.gltf',
+            function(gltf) {
+                skull = gltf.scene; // Store the loaded 3D model
+                skull.scale.set(1.5, 1.5, 1.5); // Resize skull model
+                skull.position.set(0, -1, 0); // Adjust skull position in the scene
+                scene.add(skull); // Add skull to the scene
+            },
+            undefined,
+            function(error) {
+                console.error('Error loading the skull model:', error); // Handle errors
+            }
+        );
+
+        /** STEP 7: ANIMATE THE SCENE **/
+        function animate() {
+            requestAnimationFrame(animate); // Recursively call animate() for smooth rendering
+            controls.update(); // Update camera controls each frame
+            renderer.render(scene, camera); // Render the scene and camera view
+        }
+        animate(); // Start the animation loop
+
+        /** STEP 8: HANDLE WINDOW RESIZE **/
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight); // Adjust canvas size
+            camera.aspect = window.innerWidth / window.innerHeight; // Maintain aspect ratio
+            camera.updateProjectionMatrix(); // Update camera settings
+        });
+    </script>
+</body>
+</html>
