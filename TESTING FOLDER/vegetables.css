@@ -6,13 +6,13 @@
 
 body {
     font-family: "Kurale", serif;
-    background-image: url(https://thumbs.dreamstime.com/b/vintage-kitchen-tools-pattern-cooking-seamless-kitchenware-equipment-light-blue-background-51644206.jpg);
+    background-image: url(https://villagefarmstand.store/cdn/shop/files/Untitled-1.png?v=1734026241&width=1500);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 nav {
-    background-color: #578FCA;
+    background-color: #0A6847;
     padding: 10px ;
     text-align: center;
     height: 50px;
@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-right a {
-    color: #A1E3F9;
+    color: #7ABA78;
     text-decoration: none;
 }
 
@@ -51,7 +51,7 @@ nav {
 }
 
 .nav-left a {
-    color: #A1E3F9;
+    color: #7ABA78;
     text-decoration: none;
 }
 
@@ -70,13 +70,13 @@ nav {
 }
 
 .product {
-    background-color: #D1F8EF;
+    background-color: #7ABA78;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
     width: 250px;
-    border: 2px solid #3674B5;
+    border: 2px solid #0A6847;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -107,7 +107,7 @@ nav {
 }
 
 .product button {
-    background-color: #578FCA;
+    background-color: #0A6847;
     color: white;
     border: none;
     padding: 10px;
@@ -130,7 +130,7 @@ nav {
     left: 0;
     bottom: 0;
     width: 0;
-    background: #A1E3F9;
+    background: #7ABA78;
     transition: width .2s;
     border-radius: 20px;
 }
@@ -152,7 +152,7 @@ nav {
     right: 0;
     bottom: 0;
     width: 0;
-    background: #A1E3F9;
+    background: #7ABA78;
     transition: width .2s;
     border-radius: 20px;
 
@@ -161,4 +161,3 @@ nav {
 .anim2:hover:after {
     width: 100%;
 }
-

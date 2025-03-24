@@ -3,41 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meat Shop - Chef's Table</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="meat-shop.js"></script>
+    <title>Cookware Shop - Chef's Table</title>
+    <link rel="stylesheet" href="meat.css">
+    <script defer src="meat.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav>
         <img src="./culinary.PNG" width="60px" height="60px" />
         <div class="nav-left">
-            <a href="./Atestat.html">Home</a>
-            <a href="./recipes.html">Recipes</a>
-            <a href="./cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="../Home/Atestat.html" class="anim1">Home</a>
+            <a href="../Home/recipes.html" class="anim1">Recipes</a>
+            <a href="../Home/cart.html" class="anim1">Cart (<span id="cart-count">0</span>)</a>
         </div>
         <div class="nav-right">
-            <a href="../Home/about.html">About Us</a>
-            <a href="../Home/contact.html">Contact</a>
-            <a href="../Home/login.html">Login</a>
+            <a href="../Home/about.html" class="anim2">About Us</a>
+            <a href="../Home/contact.html" class="anim2">Contact</a>
+            <a href="../Home/login.html" class="anim2">Login</a>
         </div>
     </nav>
     
     <section class="products">
-        <div class="product-grid">
-            <div class="product">
-                <img src="https://www.shutterstock.com/shutterstock/videos/16645813/thumb/1.jpg">
-                <h3>Chicken Breast</h3>
-                <p class="price">$4.99</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product">
-                <img src="https://www.joesfreshpoultry.com.au/cdn/shop/products/chicken-thigh-fillet-raw.jpg?v=1658365095">
-                <h3>Chicken Thighs</h3>
-                <p class="price">$4.49</p>
-                <button class="add-to-cart">Add to Cart</button>
-            </div>
+        <div class="product-grid" id="product-list">
+           
         </div>
     </section>
+
 </body>
 </html>
+
