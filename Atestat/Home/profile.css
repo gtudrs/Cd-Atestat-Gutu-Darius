@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kurale", serif;
+    background-image: url(https://img.freepik.com/premium-photo/food-background-pattern-texture-healthy-eating-line-icons_857340-4225.jpg);
+    color: #333;
+    text-align: center;
+}
+
+nav {
+    background-color: #0A6847;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    gap: 50px;
+    font-size: 25px;
+}
+
+.nav-right a {
+    color: #F3CA52;
+    text-decoration: none;
+}
+
+.nav-left {
+    display: flex;
+    flex-grow: 1;
+    gap: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.nav-left a {
+    color: #F3CA52;
+    text-decoration: none;
+}
+
+.anim1 {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.anim1::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #7ABA78;
+    transition: width .2s;
+    border-radius: 20px;
+}
+
+.anim1:hover:after {
+    width: 100%;
+}
+
+.anim2 {
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.anim2::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: #7ABA78;
+    transition: width .2s;
+    border-radius: 20px;
+
+}
+
+.anim2:hover:after {
+    width: 100%;
+}
+
+.profile-container {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #0A6847;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+.profile-info h2 {
+    font-size: 36px;
+    color: #0A6847;
+}
+
+.profile-info p {
+    font-size: 18px;
+    color: #7ABA78;
+}
+
+.logout-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0A6847;
+    color: #F3CA52;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #7ABA78;
+}
+
+.profile-details {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.profile-details h3 {
+    font-size: 24px;
+    color: #0A6847;
+}
+
+.profile-item {
+    margin-bottom: 20px;
+}
+
+.profile-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.profile-value {
+    color: #0A6847;
+    font-size: 18px;
+}
+
+.profile-options {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.option-item {
+    display: flex;
+    gap: 15px;
+}
+
+.option-btn {
+    padding: 10px 20px;
+    background-color: #0A6847;
+    color: #F3CA52;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option-btn:hover {
+    background-color: #7ABA78;
+}
+
+.option-section {
+    margin-top: 20px;
+}
+
+h4 {
+    color: #0A6847;
+    font-size: 20px;
+}
+
+form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select, input[type="checkbox"], button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f1f1f1;
+    color: #0A6847;
+}
+
+button {
+    cursor: pointer;
+    background-color: #0A6847;
+    color: #F3CA52;
+}
+
+button:hover {
+    background-color: #7ABA78;
+}

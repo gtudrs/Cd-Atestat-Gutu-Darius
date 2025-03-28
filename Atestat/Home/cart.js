@@ -30,6 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
         totalAmount.textContent = total.toFixed(2);
         updateCartCount();
         attachEventListeners();
+        setupPayPal(total);
     }
 
     function attachEventListeners() {
@@ -79,19 +80,35 @@ document.addEventListener("DOMContentLoaded", () => {
         window.dispatchEvent(new Event("storage"));
     }
 
+    function setupPayPal(total) {
+        document.getElementById("paypal-button-container").innerHTML = "";
+        
+        if (total > 0) {
+            paypal.Buttons({
+                createOrder: (data, actions) => {
+                    return actions.order.create({
+                        purchase_units: [{
+                            amount: {
+                                value: total.toFixed(2)
+                            }
+                        }]
+                    });
+                },
+                onApprove: (data, actions) => {
+                    return actions.order.capture().then(() => {
+                        alert("Payment successful! Thank you for your order.");
+                        localStorage.removeItem("cart");
+                        updateCartUI();
+                    });
+                },
+                onError: (err) => {
+                    console.error(err);
+                    alert("An error occurred during payment.");
+                }
+            }).render("#paypal-button-container");
+        }
+    }
+
     window.addEventListener("storage", loadCart);
     loadCart();
-});
-
-
-document.getElementById("confirm-order").addEventListener("click", () => {
-    let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    
-    if (cart.length === 0) {
-        alert("Your cart is empty! Add items before confirming the order.");
-    } else {
-        alert("Thank you! Your order has been confirmed.");
-        localStorage.removeItem("cart");
-        window.dispatchEvent(new Event("storage")); 
-    }
 });

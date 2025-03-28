@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="styleso.css">
+    <link rel="stylesheet" href="styles.css">
     <script defer src="cart.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AeA8_M7xqNJHOkX-r0GW3sdQK0vZ9cjWAAy77OLE3FoH0M_R2pe6TXIYtLi7E49jUCCiR09lnfbM9kZh&currency=USD"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Lancelot&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 </head>
 <body>
+
     <nav>
         <img src="./culinary.PNG" width="60px" height="60px" />
         <div class="nav-left">
@@ -15,6 +20,7 @@
             <a href="./recipes.html" class="anim1">Recipes</a>
             <a href="./cart.html" class="anim1">Cart (<span id="cart-count">0</span>)</a>
         </div>
+
         <div class="nav-right">
             <a href="../Home/about.html" class="anim2">About Us</a>
             <a href="../Home/contact.html" class="anim2">Contact</a>
@@ -33,16 +39,17 @@
                     <th>Remove</th>
                 </tr>
             </thead>
-            <tbody id="cart-items">
-            </tbody>
+            <tbody id="cart-items"></tbody>
         </table>
-
+        
         <div class="cart-total">
             <strong>Total: $<span id="total-amount">0.00</span></strong>
         </div>
 
         <button id="clear-cart">Clear Cart</button>
-        <button id="confirm-order">Confirm Order</button>
+        <div id="paypal-button-container"></div>
     </section>
+
 </body>
 </html>
+

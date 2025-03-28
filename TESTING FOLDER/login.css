@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kurale", serif;
+    background-image: url(https://4kwallpapers.com/images/wallpapers/dark-background-abstract-background-network-3d-background-7680x4320-8324.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F3CA52;
+    text-align: center;
+    overflow: hidden;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #0A6847;
+    padding: 10px;
+    text-align: center;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-right{
+    display: flex;
+    justify-content: end;
+    flex-grow: 1;
+    gap: 50px;
+    font-size: 25px;
+}
+
+.nav-right a{
+    color: #F3CA52;
+    text-decoration: none;
+}
+
+.nav-left{
+    display: flex;
+    flex-grow: 1;
+    gap: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+.nav-left a{
+    color: #F3CA52;
+    text-decoration: none;
+}
+
+::placeholder {
+    color: #F3CA52;
+    opacity: .5;
+}
+
+.container {
+    max-width: 600px;
+    margin: 120px auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+    margin-top: 185px;
+}
+
+.contact-title {
+    font-family: "Lancelot", serif;
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #F3CA52;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #F3CA52;
+    backdrop-filter: blur(5px);
+    border: 1px solid #0A6847;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    background: #0A6847;
+    color: #F3CA52;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #7ABA78;
+    color: white;
+}
+
+#login-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

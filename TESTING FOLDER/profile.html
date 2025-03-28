@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Chef's Table</title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+    <nav>
+        <img src="./culinary.PNG" width="60px" height="60px" />
+        <div class="nav-left">
+            <a href="./Atestat.html" class="anim1">Home</a>
+            <a href="./recipes.html" class="anim1">Recipes</a>
+            <a href="./cart.html" class="anim1">Cart</a>
+        </div>
+        <div class="nav-right">
+            <a href="./about.html" class="anim2">About Us</a>
+            <a href="./contact.html" class="anim2">Contact</a>
+            <a href="./login.html" class="anim2">Login</a>
+        </div>
+    </nav>
+
+    <div class="profile-container" id="profile-container">
+        <div class="profile-header">
+            <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Profile Picture" class="profile-pic">
+            <div class="profile-info">
+                <h2 id="profile-username"></h2>
+                <p id="profile-email"></p>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+
+        <div class="profile-details">
+            <h3>Your Profile Details</h3>
+            <div class="profile-item">
+                <span class="profile-label">Username:</span>
+                <span id="profile-username-detail" class="profile-value"></span>
+            </div>
+            <div class="profile-item">
+                <span class="profile-label">Email:</span>
+                <span id="profile-email-detail" class="profile-value"></span>
+            </div>
+        </div>
+
+        <!-- Settings and Notifications options -->
+        <div class="profile-options">
+            <h3>Options</h3>
+            <div class="option-item">
+                <button onclick="toggleSettings()" class="option-btn">Settings</button>
+                <button onclick="toggleNotifications()" class="option-btn">Notifications</button>
+            </div>
+            <!-- Settings Section -->
+            <div id="settings" class="option-section" style="display: none;">
+                <h4>Settings</h4>
+                <p>Change your settings here.</p>
+                <form>
+                    <label for="theme">Theme</label>
+                    <select id="theme" onchange="changeTheme(this.value)">
+                        <option value="light">Light</option>
+                        <option value="dark">Dark</option>
+                    </select>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+
+            <!-- Notifications Section -->
+            <div id="notifications" class="option-section" style="display: none;">
+                <h4>Notifications</h4>
+                <p>Manage your notification preferences.</p>
+                <form>
+                    <label for="email-notifications">Email Notifications</label>
+                    <input type="checkbox" id="email-notifications" checked>
+                    <br>
+                    <label for="push-notifications">Push Notifications</label>
+                    <input type="checkbox" id="push-notifications" checked>
+                    <br>
+                    <button type="submit">Save</button>
+                </form>
+            </div><!-- Add the select box to change theme -->
+            
+            
+
+        </div>
+
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
+
