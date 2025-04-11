@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <title>Interfață XAR-42</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="space-bg"></canvas>
+  <div class="chat-ui">
+    <h1 class="glitch-title" data-text="XAR-42">XAR-42</h1>
+    <div id="chatbox" class="chatbox"></div>
+    <div class="input-row">
+      <input type="text" id="userInput" placeholder="Trimite semnal..." />
+      <button onclick="sendMessage()">Transmite</button>
+    </div>
+  </div>
+  <audio id="glitchSound" src="glitch.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

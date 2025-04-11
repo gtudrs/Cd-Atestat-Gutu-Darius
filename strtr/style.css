@@ -1,0 +1,106 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Courier New', monospace;
+    color: #00f0ff;
+    background: black;
+  }
+  
+  canvas#space-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .chat-ui {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 20px;
+    background: rgba(0, 0, 20, 0.85);
+    border: 2px solid #00f0ff;
+    box-shadow: 0 0 20px #00f0ff;
+  }
+  
+  .glitch-title {
+    font-size: 32px;
+    position: relative;
+    text-align: center;
+    color: #00f0ff;
+    animation: flicker 1.5s infinite alternate;
+  }
+  
+  .glitch-title::after {
+    content: attr(data-text);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    color: red;
+    clip: rect(0, 900px, 0, 0);
+    animation: glitch 1s infinite linear alternate-reverse;
+  }
+  
+  @keyframes glitch {
+    0% { clip: rect(0, 900px, 0, 0); }
+    10% { clip: rect(0, 900px, 30px, 0); }
+    20% { clip: rect(10px, 900px, 60px, 0); }
+    100% { clip: rect(80px, 900px, 100px, 0); }
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 1; }
+    50% { opacity: 0.4; }
+    100% { opacity: 1; }
+  }
+  
+  .chatbox {
+    height: 350px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border: 1px solid #00f0ff;
+    font-size: 16px;
+  }
+  
+  .input-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    background: black;
+    color: #00f0ff;
+    border: 1px solid #00f0ff;
+  }
+  
+  button {
+    padding: 10px;
+    background: #00f0ff;
+    color: black;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .user-message, .alien-message {
+    margin-bottom: 10px;
+  }
+  
+  .alien-message {
+    animation: glitch-text 0.3s infinite alternate;
+    text-shadow: 1px 0 red, -1px 0 blue;
+  }
+  
+  @keyframes glitch-text {
+    0% { transform: translate(0); }
+    20% { transform: translate(-1px, 1px); }
+    40% { transform: translate(1px, -1px); }
+    60% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0); }
+  }

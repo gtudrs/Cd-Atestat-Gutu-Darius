@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { name: "Spatula (Silicone)", price: 4.99, img: "https://m.media-amazon.com/images/I/810+sEadfAL._AC_UF350,350_QL80_.jpg" },
         { name: "Fish Turner", price: 5.99, img: "https://cb.scene7.com/is/image/Crate/OXOFishSpatulaSHF16?$web_pdp_main_carousel_med$" },
         { name: "Kitchen Shears", price: 7.99, img: "https://m.media-amazon.com/images/I/71wbdrm5dCS._AC_UF894,1000_QL80_.jpg" },
-        { name: "Garlic Press", price: 6.99, img: "https://ae01.alicdn.com/kf/He538aa44cca84d8cb599841c9beb2d76Q.jpg_640x640q90.jpg" },
+        { name: "Garlic Press", price: 6.99, img: "https://ae01.alicdn.com/kf/Heedcc19b75b24da287aec4c28b07c942x.jpg?width=800&height=800&hash=1600" },
         { name: "Can Opener (Manual)", price: 6.49, img: "https://azure-merchants.zammit.shop/active-storage/lbkn7e4filcbxw0bhd4dmem31uso" },
         { name: "Zester/Microplane", price: 7.99, img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdoYVuhLA9jnQg7PPDSGJXMnFBz4mlVUJzcnVPXQTOhIeeyc93sNNPVVe_NjBOvLq3EE&usqp=CAU" },
         { name: "Basting Brush (Silicone)", price: 3.49, img: "https://m.media-amazon.com/images/I/518-m8G+G6L._AC_UF350,350_QL80_.jpg" },
